@@ -18,12 +18,12 @@ Clone this repository or download it as a .ZIP file
 
 ### Backend
 
-1. In your AWS account, in CloudFormation, create a new stack and use the template file `/aws_resources/template.yml`
+1. In your AWS account, in CloudFormation, create a new stack and use the template file `aws_resources/template.yml`
 2. When the stack is deployed, go to Outputs and make note of `translateURL`
 
 ### Frontend (Firefox Extension)
 
-1. In the extension's background script, `extension\background_script.js`, replace the API Gateway URL on line 18. 
+1. In the extension's background script, `extension/background_script.js`, replace the API Gateway URL on line 18. 
 2. In your Firefox Browser, navigate to `about:debugging`
 3. On the side-bar on the left, select "This Firefox"
 4. Click on Load "Temporary Add-on..."
@@ -41,9 +41,9 @@ The text should then be switched with its French equivalent.
 
 ## Customization
 
-To change the translation language, edit lines 66 and 67 in the file `extension\background_script.js` and change the source and destination language codes as needed.
+To change the translation language, edit lines 66 and 67 in the file `aws_resources/template.yml` and change the source and destination language codes as needed.
 
-To remove the orange border around the page content, edit the file `extension\content_script.js` and delete the last line. 
+To remove the orange border around the page content, edit the file `extension/content_script.js` and delete the last line. 
 
 ## Security
 
